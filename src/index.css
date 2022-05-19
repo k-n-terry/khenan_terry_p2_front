@@ -1,0 +1,250 @@
+/* BODY */
+body{
+  background-color: #0F3A2F;
+}
+body * h1{
+  text-align: center;
+  padding: 5px;
+  color: #FFFFFF;
+  background: #2F2F2F;
+  border-style: solid;
+  border-width: thin;
+  border-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 5px 5px black;
+}
+/* Heading Decoration */
+div.pageheading{
+  background-color: #FFF0F0;
+  padding: 10px 10px 10px 10px;
+  position: fixed;
+  z-index: 2;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 140px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+/* LINK GRID */
+/* Link Buttons */
+div.link_01{grid-area: left;}
+div.link_02{grid-area: mi1;}
+div.link_03{grid-area: mi2;}
+div.link_04{grid-area: right;}
+/* Link Grid Styling */
+div.link_grid{
+  display: grid;
+  grid-template-areas:
+    'left mi1 mi2 right';
+  gap: 10px;
+
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  bottom: 10px;
+}
+div.routes{
+  position: relative;
+  z-index: 1;
+  top: 160px;
+}
+label{
+  color: #FFFFFF;
+}
+label.head_label{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #0F3A2F;
+}
+fieldset{
+  background-color: #2F2F2F;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 5px 5px;
+  height: 250px;
+  overflow: auto;
+}
+fieldset.head_fieldset{
+  height: 85px;
+  overflow: none;
+}
+fieldset.potluck_fieldset{
+  height: 810px;
+  overflow: none;
+}
+legend{
+  box-shadow: 2px 2px black;
+}
+input{
+  border-radius: 5px;
+}
+button{
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+}
+button.header_button{
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+  border-color: #00BAFF;
+}
+
+/* All MAIN GRIDS' styling follows */
+
+/* Main Grid Arrangement & Styling */
+/* Main Grid Area Assignments */
+.item_grid{grid-area: top;}
+.potluck_grid{grid-area: middle;}
+.user_grid{grid-area: bottom;}
+/* Main Grid Styling */
+div.main_grid{
+  display: grid;
+  grid-template-areas:
+    'top top top'
+    'middle middle middle'
+    'bottom bottom bottom';
+  gap: 10px;
+  padding: 10px;
+  bottom: 10px;
+}
+/* Item Grid Arrangement & Styling */
+/* Item Grid Area Assignments */
+.item_view{grid-area: top;}
+.item_reg{grid-area: reg;}
+.item_del{grid-area: del;}
+/* Item Grid Styling */
+div.item_grid{
+  display: grid;
+  grid-template-areas:
+    'top top'
+    'reg del';
+  gap: 10px;
+  padding: 10px;
+  bottom: 10px;
+}
+/* Potluck Grid Arrangement & Styling */
+/* Potluck Grid Area Assignments */
+.potluck_view{grid-area: vie;}
+.potluck_reg{grid-area: reg;}
+.potluck_up{grid-area: upd;}
+.potluck_del{grid-area: del;}
+/* Potluck Grid Styling */
+div.potluck_grid{
+  display: grid;
+  grid-template-areas:
+    'vie reg'
+    'vie upd'
+    'vie del';
+  gap: 10px;
+  padding: 10px;
+  bottom: 10px;
+}
+/* User Grid Arrangement & Styling */
+/* User Grid Area Assignments */
+.user_reg{grid-area: reg;}
+.user_log{grid-area: log;}
+/* User Grid Styling */
+div.user_grid{
+  display: grid;
+  grid-template-areas:
+    'reg log';
+  gap: 10px;
+  padding: 10px;
+  bottom: 10px;
+}
+
+
+/* REGISTER Pages have green legend elements and green button elements */
+/* Legends */
+legend.green{
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #00A000;
+  border-radius: 5px;
+}
+/* Buttons */
+button.green{
+  color: #FFFFFF;
+  background-color: #00AA00;
+  border-color: #00FF00;
+}
+
+
+/* DELETE Pages have red legend elements and red button elements */
+/* Legends */
+legend.red{
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #AF0000;
+  border-radius: 5px;
+}
+/* Buttons */
+button.red{
+  color: #FFFFFF;
+  background-color: #AA0000;
+  border-color: #FF0000;
+}
+
+
+/* UPDATE Pages have purple legend elements and pruple button elements*/
+/* Legends */
+legend.purple{
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #7700AA;
+  border-radius: 5px;
+}
+/* Buttons */
+button.purple{
+  color: #FFFFFF;
+  background-color: #7700AA;
+  border-color: #CC00FF;
+}
+
+
+/* VIEWER */
+legend.blue{
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #008ACF;
+  border-radius: 5px;
+}
+/* Buttons */
+button.blue{
+  color: #FFFFFF;
+  background-color: #008ACF;
+  border-color: #00BAFF;
+}
+
+/* Tables */
+div.item_window,
+div.potluck_window,
+div.user_window{
+  height: 300px;
+  width: 100%;
+}
+table{
+  width: 100%;
+}
+thead{
+  text-align: left;
+  border-style: solid;
+  border-color: #FFFFFF;
+  color: #FFAA00;
+}
+th,td{
+  border-style: hidden;
+  border-width: thin;
+}
+td.i_id,
+td.p_id,
+td.c_id{
+  color: #FFFF00;
+}
+td.none{
+  color: #FFFFFF;
+}
